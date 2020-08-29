@@ -16,3 +16,9 @@
     
     
 }
+
+.App_signup{
+    display: flex;
+    
+    flex-direction: column;
+}
