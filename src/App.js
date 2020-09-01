@@ -137,26 +137,31 @@ function App() {
          </div>
         
        </Modal>
+
+
+
        
-       <Modal
+     <Modal
       open={openSignIn}
       onClose={()=>setOpenSignIn(false)}
       >
       
         <div style={modalStyle} className={classes.paper}>
           <form className="App_signup">
-              <center>
+            <center>
               <img className="App_header_image"
                   src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"></img>
             </center>
               
-              <Input
+            <Input
                 placeholder="email"
                 type="text"
                 value={email}
-                onChange={(e)=>setEmail(e.target.value)}></Input>
+                onChange={(e)=>setEmail(e.target.value)}>
 
-              <Input
+            </Input>
+
+            <Input
                 placeholder="password"
                   type="password"
                   value={password}
