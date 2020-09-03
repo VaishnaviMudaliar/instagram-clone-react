@@ -104,10 +104,7 @@ function App() {
   
   return (
     <div className="App">
-      <Modal
-      open={open}
-      onClose={()=>setOpen(false)}
-      >
+      <Modal open={open} onClose={()=>setOpen(false)}>
       
         <div style={modalStyle} className={classes.paper}>
           <form className="App_signup">
@@ -177,12 +174,13 @@ function App() {
         <img className="App_header_image"
          src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt=" "></img>
       </div>
+
       {user?(
          <Button onClick={()=>auth.signOut()} >LogOut</Button>
 
       ):(
         <div className="App_login_container">
-          <Button onClick={()=>setOpen(true)} >Sign In</Button>
+          <Button onClick={()=>setOpenSignIn(true)} >Sign In</Button>
           <Button onClick={()=>setOpen(true)} >Sign Up</Button>
 
         </div>
